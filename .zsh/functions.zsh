@@ -4,3 +4,8 @@ fzf-snippet() {
     # remove tags, leading and trailing spaces, also no newline
     echo "$selected" | sed -e s/\;\;\.\*\$// | sed 's/^[ \t]*//;s/[ \t]*$//' | tr -d '\n' | xclip -selection clipboard
 }
+
+mkcd() {
+	mkdir -p "$1"
+	cd "$_"
+}
