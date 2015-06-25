@@ -43,3 +43,5 @@ setopt PROMPT_SUBST
 
 unsetopt MENU_COMPLETE
 setopt AUTO_MENU
+
+set -o vi
